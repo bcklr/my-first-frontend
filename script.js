@@ -23,7 +23,7 @@ if (currentSize > 20) {
   currentSize = currentSize - 2;
   btn.style.transform = `scale(${currentSize / 100})`;
    
-});
+
 
 btn.addEventListener('click', function() {
   alert("NO WAY! You Actually Caught It!");
