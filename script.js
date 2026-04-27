@@ -7,7 +7,7 @@ const escapeLabel = document.getElementById('escape-score');
 btn.addEventListener('mouseover', function() {
 
 
-const x - Math.random() * (window.innerWidth = btn.clientWidth);
+const x = Math.random() * (window.innerWidth = btn.clientWidth);
 const y = Math.random() * (window.innerHeight = btn.clientHeight);
 
 
