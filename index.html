@@ -1,55 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-<title>The Untouchable Button</title>
-    <style>
-
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #1a1a1a;
-        overflow: hidden;
-        margin: 0; 
-        font-family: sans-serif;
-      }
-      #run-away-btn {
-        padding: 15px 30px;
-        font-size: 20px;
-        background-color: #ff4757;
-        color: white;
-        border: none;
-        border-radius: 8px; 
-        cursor: pointer;
-        position: absolute;
-        transition: 0.1s;
-      }
-    </style>
+    <title>Escape Button Game</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body> 
-  
-    <button id="run-away-btn">Click Me If You Can</button>
+  <body>
 
-    <script>
+    <h1>The Untouchable Button</h1>
 
-      const btn = document.getElementById('run-away-btn');
+    <div id="scoreboard">
+      <p>Escapes: <span id="escape-score">0</span></p>
+    </div>
 
-btn.addEventListener('mouseover', function() {
+    <button id="run-away-btn">Catch Me!</button>
 
-  const x = Math.random() * (window.innerWidth - btn.clientWidth);
-            const y = Math.random() * (window.innerHeight - btn.clientHeight);
-
-
-  btn.style.left = x + 'px';
-  btn.style.top = y + 'px';
-});
-
-
-      btn.addEventListener('click', function() {
-        alert("Impossible! You actually clicked it!");
-      });
-  
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
