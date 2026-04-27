@@ -13,3 +13,13 @@ body {
   border: none;
   cursor: pointer;
 }
+
+transition: all 0.2s ease; 
+box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+}
+
+
+#run-away-btn:hover {
+   transform: scale(1.1);
+   background-color: #ff4d6d;
+}
