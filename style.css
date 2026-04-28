@@ -1,25 +1,23 @@
 body {
-   background-color: #222;
-  color: white;
-  font-family: sans-serif;
-  text-align: center;
+    background-color: #222;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 #run-away-btn {
-  position: absolute;
-  padding: 10px 20px;
-  background: red;
-  color: white;
-  border: none;
-  cursor: pointer;
+    position: absolute;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    /* MOVE THESE INSIDE THE BRACKETS */
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
 }
-
-transition: all 0.2s ease; 
-box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
-}
-
 
 #run-away-btn:hover {
-   transform: scale(1.1);
-   background-color: #ff4d6d;
+    transform: scale(1.1);
+    background-color: #ff4d6d;
 }
